@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>スケジュール管理</title>
+        <script>
+        </script>
+    </head>
+    <body>
+        <h1>What to do</h1>
+        <p>やるべきことをメモしてスケジュールを管理しよう</p>
+        <div class="input-content">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <input type="date" id="addDate" class="form-control"/>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="addText" class="form-control" placeholder="what to do">
+                </div>
+                <div class="col-auto">
+                    <input type="button" id="addButton" class="btn btn-outline-dark" value="add">
+                </div>
+            </div>
+        </div>
+        
+        <table class="table table-hover table-bordered border-white">
+            <thead class="table-dark">
+                <tr>
+                    <th class="col">日付</th>
+                    <th class="col-8">内容</th>
+                    <th class="col">削除</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+        <script src="js/index.js"></script>
+        <script src="js/date.js"></script>
+    </body>
+</html>
